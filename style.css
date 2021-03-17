@@ -1,0 +1,60 @@
+/* Feuille de style pour le projet 3 Ohmyfood ! */
+
+html {
+    text-size-adjust: 100%; /* Determine ajustement taille police par rapport à sa taille initiale*/
+    font-size: 100%; /*Tous mes éléments utilisant l’unité de mesure REM, auront une taille relative à cette taille (100% dans le cas présent)*/
+  }
+  
+  body {
+    font-family: 'Shrikhand', cursive;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  h1, h3 {
+    font-family: 'Shrikhand', cursive; 
+  }
+  p, a {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* HEADER */
+  
+  #header {
+    width: 100%;
+    padding: 0.5rem;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    z-index: 1000;
+ }
+  #logo-ohmyfood {
+    display: block;
+    font-family: 'Shrikhand', cursive;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+  #first-section {
+    background-color: #f2f2f2; /* Arriére-plan gris*/
+    width: 100%;
+    
+  }
+  #city {
+      display: flex;
+      border-style: none;
+      cursor: pointer;
+      width: 80%;
+      justify-content: center;
+      
+  }
+  .fas.fa-map-marker-alt {
+    
+    padding: 1rem 1.25rem;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
+  }
+  #paris {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    
+}
