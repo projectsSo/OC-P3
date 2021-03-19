@@ -5,17 +5,18 @@ html {
   font-size: 100%; /*Tous mes éléments utilisant l’unité de mesure REM, auront une taille relative à cette taille (100% dans le cas présent)*/
 }
 
-body, html {
-  
+body,
+html {
   /* font-family: 'Roboto', sans-serif;*/
   margin: 0;
   padding: 0;
 }
+/*loader*/
 .loader_block {
   position: fixed;
   height: 100%;
   width: 100%;
-  animation: loader .01s;
+  animation: loader 0.01s;
   animation-delay: 1.75s;
   display: flex;
   align-items: center;
@@ -35,44 +36,45 @@ body, html {
   height: 100px;
   margin: auto;
   position: absolute;
-  left: 0; right: 0; top: 0; bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   animation: spin 3s linear;
   animation-fill-mode: forwards;
-  animation-delay: .2s;
+  animation-delay: 0.2s;
   background-color: rgb(245, 147, 237);
 }
 
 @keyframes spin {
   0% {
-      transform: rotate(0deg);
-      opacity: 1;
+    transform: rotate(0deg);
+    opacity: 1;
   }
   100% {
-      transform: rotate(360deg);
-      opacity: 0;
+    transform: rotate(360deg);
+    opacity: 0;
   }
 }
-
-
-  
+/*End loader*/
 
 h1,
-h3,
-p {
+h3 {
   font-family: "Shrikhand", cursive;
 }
-a {
+a,
+p {
   font-family: "Roboto", sans-serif;
 }
 
 /* HEADER */
-
 .header {
   padding: 1rem;
   box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
   position: relative;
   z-index: 10;
 }
+/*Fin header*/
 
 main {
   margin: auto;
@@ -84,13 +86,12 @@ main {
   display: block;
   margin: auto;
 }
-
+/*First section*/
 #first-section {
   width: 100%;
   font-size: 1.2rem;
   /*font-family: 'Roboto', sans-serif;
     font-family: 'Shrikhand', cursive;*/
-    
 }
 #city {
   display: flex;
@@ -113,12 +114,11 @@ main {
   font-weight: 900;
 }
 #grey {
- /* background-color: #fafafa;*/
- background-color: pink;
- padding: 2rem;
- text-align: center;
+  /* background-color: #fafafa;*/
+  background-color: pink;
+  padding: 2rem;
+  text-align: center;
 }
-
 #reservez {
   margin: 0;
 }
@@ -139,27 +139,113 @@ main {
   justify-content: center;
   font-size: 1.1rem;
   font-weight: bold;
-  background-color: violet;
+  background-color: #ff79da;
   margin: auto;
 }
-a {
+#first-ancre {
   text-decoration: none;
   color: white;
 }
+/*End first section*/
 
 /*seconde section*/
-#second-section { 
-  margin: 20px;
-  /*position: relative;*/
-}
-#fonction {
-  /*margin-top: 0;*/
-}
-#choice {
-  
+#second-section {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 45px;
+  margin-bottom: 20px;
+  margin: 5%;
 }
 .listing {
   display: flex;
   align-items: center;
+  max-width: 100%;
+  margin-top: 4%;
 }
+.a-deuxieme-section {
+  text-decoration: none;
+  color: black;
+  background-color: #f6f6f6;
+  align-self: center;
+  margin-bottom: 25px;
+  height: 75px;
+  width: 100%;
+  border-radius: 24px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 6px #aaa;
+  margin-left: 10px;
+}
+.number {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #9356dc;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 28px;
+  font-size: 0.9em;
+  left: -10px;
+  position: relative;
+}
+.fas.fa-mobile-alt,
+.fas.fa-list,
+.fas.fa-store.logo_menu {
+  position: relative;
+  left: 30px;
+}
+.choice {
+  /*margin-top: 0;*/
+  display: flex;
+  max-width: 100%;
+  cursor: pointer;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: auto;
+}
+/*End first section*/
 
+/*third section*/
+#third-section {
+  font-size: 1.2em;
+  padding-top: 45px;
+  margin-bottom: 20px;
+  margin: auto;
+  background-color: #f6f6f6;
+}
+#restaurant {
+  margin-left: 5%;
+}
+.backround {
+  width: 90%;
+  margin: 5%;
+  cursor: pointer;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  padding-bottom: 1%;
+}
+.a-troisieme-section {
+  text-decoration: none;
+  color: black;
+}
+.images {
+  width: 100%;
+  border-radius: 10%;
+}
+.new {
+    border-radius: 10%;
+    padding: 5px 10px;
+    right: 8%;
+    margin-top: 15px;
+    position: absolute;
+    background-color: #99e2d0;
+    color: #2c9c81;
+    font-size: 1rem;
+    font-weight: bold;
+}

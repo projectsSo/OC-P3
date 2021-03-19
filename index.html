@@ -2,9 +2,9 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Accueil-Ohmyfood!</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
 
     <link
       rel="stylesheet"
@@ -20,11 +20,9 @@
     <!--Loader-->
     <div class="loader_block">
       <div class="loader"></div>
-  </div>
-  <!--Fin Loader-->
+    </div>
+    <!--Fin Loader-->
 
-  
-    
     <!--header-->
     <header class="header">
       <img
@@ -39,54 +37,81 @@
       <!--Premiere section-->
 
       <section id="first-section">
-        
-          <div id="city">
-            <i class="fas fa-map-marker-alt"></i>
-            <span id="paris">Paris, Belleville</span>
-          </div>
-          <div id="grey">
+        <div id="city">
+          <i class="fas fa-map-marker-alt"></i>
+          <span id="paris">Paris, Belleville</span>
+        </div>
+        <div id="grey">
           <div>
-            <h1 id="reservez">Réservez le menu qui <br> vous convient</h1>
-          <p id="decouvrez">
+            <h1 id="reservez">
+              Réservez le menu qui <br />
+              vous convient
+            </h1>
+            <p id="decouvrez">
               Découvrez des restaurants d'exception, seléctionnés par nos soins.
             </p>
           </div>
           <nav id="explorer">
-            <a href="#restaurants">Explorer mes restaurants</a>
+            <a href="#" id="first-ancre">Explorer mes restaurants</a> <!--restaurants-->
           </nav>
         </div>
       </section>
+      <!--Fin premiere section-->
 
       <!--seconde section-->
       <section id="second-section">
-        <h1 id="fonction">Fonctionnement</h1>
+        <h1>Fonctionnement</h1>
         <nav>
           
           <div class="listing">
-            <a href="restaurants"></a>
+            <a href="#" class="a-deuxieme-section">
           <span class="number">1</span>
-          <i class="fas fa-mobile-alt"></i>
-          <h2>Choisissez un restaurant</h2>
-        </div>
+            <i class="fas fa-mobile-alt"></i>
+            <h2 class="choice">Choisissez un restaurant</h2>
+          </a>
+          </div>
+        
           
-      <div class="listing">
-        <span class="number">2</span>
-        <i class="fas fa-list"></i>
-        <h2>Composez votre menu</h2>
-        </div>
-
-        <div class="listing">
-          <span class="number">3</span>
-          <i class="fas fa-store logo_menu"></i>
-          <h2>Dégustez au restaurants</h2>
-
-        </div>
+          <div class="listing">
+            <a href="#" class="a-deuxieme-section">
+            <span class="number">2</span>
+            <i class="fas fa-list"></i>
+            <h2 class="choice">Composez votre menu</h2>
+          </a>
+          </div>
         
-
-        
-      
+          <div class="listing">
+            <a href="#" class="a-deuxieme-section">
+            <span class="number">3</span>
+            <i class="fas fa-store logo_menu"></i>
+            <h2 class="choice">Dégustez au restaurants</h2>
+          </a>
+          </div>
         </nav>
       </section>
+
+      <!--third section-->
+<section id="third-section">
+  <h1 id="restaurant">Restaurants</h1> 
+  <div class="backround">
+    <a class="a-troisieme-section" href="#">
+    <img class="images" src="Maquettes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt=""/>
+    <span class="new">Nouveau</span>
+    <h3>La palette du goût</h3>
+    <p>Ménilmontant</p>
+  </a>
+  </div>
+  <div class="backround">
+    <a class="a-troisieme-section" href="#">
+    <img class="images" src="Maquettes-Ohmyfood/images/restaurants/charonne.jpg" alt=""/>
+    <span class="new">Nouveau</span>
+    <h3>La palette du goût</h3>
+    <p>Ménilmontant</p>
+  </a>
+  </div>
+  
+
+</section>
     </main>
   </body>
 </html>
