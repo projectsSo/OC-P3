@@ -1,60 +1,281 @@
 /* Feuille de style pour le projet 3 Ohmyfood ! */
 
 html {
-    text-size-adjust: 100%; /* Determine ajustement taille police par rapport à sa taille initiale*/
-    font-size: 100%; /*Tous mes éléments utilisant l’unité de mesure REM, auront une taille relative à cette taille (100% dans le cas présent)*/
-  }
+  text-size-adjust: 100%; /* Determine ajustement taille police par rapport à sa taille initiale*/
+  font-size: 100%; /*Tous mes éléments utilisant l’unité de mesure REM, auront une taille relative à cette taille (100% dans le cas présent)*/
+}
+
+body,
+html {
+  /* font-family: 'Roboto', sans-serif;*/
+  margin: 0;
+  padding: 0;
+}
+
+
+
+h1,
+h3 {
+  font-family: "Shrikhand", cursive;
+}
+a,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+.header {
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+  position: relative;
+  z-index: 10;
+}
+/*Fin header*/
+
+main {
+  margin: auto;
+  display: block; /*valeur par défaut, elements les un en dessous de autres, oblige à revenir à la ligne*/
+  justify-content: flex-start; /*Indique la façon dt l'espace doit etre réparti entre et autour des élements selon l'axe principal*/
+  width: 100%;
+}
+#logo-ohmyfood {
+  display: block;
+  margin: auto;
+}
+/*First section*/
+#first-section {
+  width: 100%;
+  font-size: 1.2rem;
+  /*font-family: 'Roboto', sans-serif;
+    font-family: 'Shrikhand', cursive;*/
+}
+#city {
+  display: flex;
+  align-items: center;
+  border-style: none;
+  cursor: pointer;
+  width: 100%;
+  justify-content: center;
+  background-color: #f3f3f3;
+}
+.fas.fa-map-marker-alt {
+  padding: 1rem 1.25rem;
+  border-radius: 20px 0 0 20px;
+  text-align: center;
+}
+#paris {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  border-style: none;
+  font-weight: 900;
+}
+#grey {
+  background-color: #fafafa;
+  padding: 2rem;
+  text-align: center;
+}
+#reservez {
+  margin: 0;
+}
+#decouvrez {
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+#explorer {
+  display: flex;
+  width: 60%;
+  max-width: 100%;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 30px;
+  border: #f2f2f2 0.2rem solid;
+  padding: 8px;
+  height: 49px;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #ff79da;
+  margin: auto;
+}
+.first-ancre {
+  text-decoration: none;
+  color: white;
+}
+/*End first section*/
+
+/*seconde section*/
+#second-section {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin: 5%;
+}
+.listing {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin-top: 4%;
+}
+.a-deuxieme-section {
+  text-decoration: none;
+  color: black;
+  background-color: #f6f6f6;
+  align-self: center;
+  margin-bottom: 25px;
+  height: 75px;
+  width: 100%;
+  border-radius: 24px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 6px #aaa;
+  margin-left: 10px;
+}
+.number {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #9356dc;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 28px;
+  font-size: 0.9em;
+  left: -10px;
+  position: relative;
+}
+.fas.fa-mobile-alt,
+.fas.fa-list,
+.fas.fa-store.logo_menu {
+  position: relative;
+  left: 30px;
+}
+.choice {
+  /*margin-top: 0;*/
+  display: flex;
+  max-width: 100%;
+  cursor: pointer;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: auto;
+}
+/*End first section*/
+
+/*third section*/
+#third-section {
+  font-size: 1.2em;
+  padding-top: 45px;
+  margin-bottom: 20px;
+  margin: auto;
+  background-color: #f6f6f6;
+  padding-bottom: 50px;
+}
+#restaurant {
+  margin-left: 5%;
   
-  body {
-    font-family: 'Shrikhand', cursive;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  h1, h3 {
-    font-family: 'Shrikhand', cursive; 
-  }
-  p, a {
-    font-family: 'Roboto', sans-serif;
-  }
+}
+.backround {
+  width: 90%;
+  margin: 5%;
+  cursor: pointer;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  padding-bottom: 1%;
+}
+.a-troisieme-section {
+  text-decoration: none;
+  color: black;
+}
+.images {
+  width: 100%;
+  border-radius: 10%;
+  height: 230px;
+  max-width: 100%;
+}
+.new {
+    border-radius: 10%;
+    padding: 5px 10px;
+    right: 8%;
+    margin-top: 15px;
+    position: absolute;
+    background-color: #99e2d0;
+    color: #2c9c81;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.heart {
   
-  /* HEADER */
+    font-size: 1.6em;
+    transform-origin: bottom;
+    opacity: 1;
+    font-size: 24px;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+  position: absolute;
+  font-size: 16px;
+  color: black;
+   
+}
+
+/*Footer*/
+#footer-footer {
+  display: flex;
+  background: #363636;
+  padding: 5%;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-bottom: 30px;
+    padding-top: 20px;
+    line-height: 0.5;
+}
+#white {
+  color: white
+}
+.bas-de-page {
+  display: flex;
+  align-items: center;
+  color: white;
   
-  #header {
-    width: 100%;
-    padding: 0.5rem;
-    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
-    z-index: 1000;
- }
-  #logo-ohmyfood {
-    display: block;
-    font-family: 'Shrikhand', cursive;
-    margin: auto;
-    text-align: center;
-    margin-top: 5%;
-    padding-bottom: 5%;
+
+}
+#proposer {
+  margin-left: 5%;
+}
+#devenir {
+  margin-left: 3%;
+}
+/*End footer*/
+
+
+@media all and (min-width: 768px) and (max-width:1240px){
+  main {
+    
   }
   #first-section {
-    background-color: #f2f2f2; /* Arriére-plan gris*/
-    width: 100%;
-    
-  }
-  #city {
-      display: flex;
-      border-style: none;
-      cursor: pointer;
-      width: 80%;
-      justify-content: center;
-      
-  }
-  .fas.fa-map-marker-alt {
-    
-    padding: 1rem 1.25rem;
-    border-radius: 20px 0 0 20px;
-    text-align: center;
-  }
-  #paris {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    
+    display: block;
 }
+  #second-section {
+    display: flex;
+    flex-direction: row;
+  }
+  #listing {
+    display: flex;
+  }
+  .images {
+    width: 50%;
+  }
+}
+@media all and (min-width:1240px){
+  .images {
+    width: 40%;
+  }
+}
+
