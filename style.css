@@ -11,52 +11,8 @@ html {
   margin: 0;
   padding: 0;
 }
-/*loader*/
-.loader_block {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  animation: loader 0.01s;
-  animation-delay: 1.75s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-  background: transparent;
-}
 
-.loader {
-  border: 10px solid grey;
-  border-top: 10px solid rgb(136, 81, 201);
-  border-left: 10px solid rgb(147, 226, 209);
-  border-right: 10px solid rgb(147, 226, 209);
-  border-bottom: 10px solid rgb(255, 121, 213);
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  animation: spin 3s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 0.2s;
-  background-color: rgb(245, 147, 237);
-}
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0;
-  }
-}
-/*End loader*/
 
 h1,
 h3 {
@@ -114,8 +70,7 @@ main {
   font-weight: 900;
 }
 #grey {
-  /* background-color: #fafafa;*/
-  background-color: pink;
+  background-color: #fafafa;
   padding: 2rem;
   text-align: center;
 }
@@ -142,7 +97,7 @@ main {
   background-color: #ff79da;
   margin: auto;
 }
-#first-ancre {
+.first-ancre {
   text-decoration: none;
   color: white;
 }
@@ -152,7 +107,7 @@ main {
 #second-section {
   font-size: 1.2em;
   font-weight: bold;
-  padding-top: 45px;
+  padding-top: 20px;
   margin-bottom: 20px;
   margin: 5%;
 }
@@ -217,9 +172,11 @@ main {
   margin-bottom: 20px;
   margin: auto;
   background-color: #f6f6f6;
+  padding-bottom: 50px;
 }
 #restaurant {
   margin-left: 5%;
+  
 }
 .backround {
   width: 90%;
@@ -237,6 +194,8 @@ main {
 .images {
   width: 100%;
   border-radius: 10%;
+  height: 230px;
+  max-width: 100%;
 }
 .new {
     border-radius: 10%;
@@ -249,3 +208,74 @@ main {
     font-size: 1rem;
     font-weight: bold;
 }
+
+.heart {
+  
+    font-size: 1.6em;
+    transform-origin: bottom;
+    opacity: 1;
+    font-size: 24px;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+  position: absolute;
+  font-size: 16px;
+  color: black;
+   
+}
+
+/*Footer*/
+#footer-footer {
+  display: flex;
+  background: #363636;
+  padding: 5%;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-bottom: 30px;
+    padding-top: 20px;
+    line-height: 0.5;
+}
+#white {
+  color: white
+}
+.bas-de-page {
+  display: flex;
+  align-items: center;
+  color: white;
+  
+
+}
+#proposer {
+  margin-left: 5%;
+}
+#devenir {
+  margin-left: 3%;
+}
+/*End footer*/
+
+
+@media all and (min-width: 768px) and (max-width:1240px){
+  main {
+    
+  }
+  #first-section {
+    display: block;
+}
+  #second-section {
+    display: flex;
+    flex-direction: row;
+  }
+  #listing {
+    display: flex;
+  }
+  .images {
+    width: 50%;
+  }
+}
+@media all and (min-width:1240px){
+  .images {
+    width: 40%;
+  }
+}
+
