@@ -193,9 +193,10 @@ main {
 }
 .images {
   width: 100%;
-  border-radius: 10%;
+  border-radius: 15px 15px 0 0;
   height: 230px;
   max-width: 100%;
+  object-fit: cover;
 }
 .new {
     border-radius: 10%;
@@ -269,12 +270,16 @@ main {
   #listing {
     display: flex;
   }
+ 
   .images {
-    width: 50%;
+    width: 100%;
   }
 }
 @media all and (min-width:1240px){
   .images {
+    width: 100%;
+  }
+  .backround {
     width: 40%;
   }
 }
