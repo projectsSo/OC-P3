@@ -1,5 +1,7 @@
 /* Feuille de style pour le projet 3 Ohmyfood ! */
 
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 html {
   text-size-adjust: 100%; /* Determine ajustement taille police par rapport à sa taille initiale*/
   font-size: 100%; /*Tous mes éléments utilisant l’unité de mesure REM, auront une taille relative à cette taille (100% dans le cas présent)*/
@@ -11,8 +13,6 @@ html {
   margin: 0;
   padding: 0;
 }
-
-
 
 h1,
 h3 {
@@ -176,7 +176,6 @@ main {
 }
 #restaurant {
   margin-left: 5%;
-  
 }
 .backround {
   width: 90%;
@@ -186,6 +185,25 @@ main {
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   padding-bottom: 1%;
+  position: relative;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+}
+.flex-heart {
+  margin-bottom: 0;
+}
+.small-title {
+  margin-top: 0;
+}
+.heart {
+  font-size: 30px;
+}
+.title {
+  margin-bottom: 0;
 }
 .a-troisieme-section {
   text-decoration: none;
@@ -199,31 +217,29 @@ main {
   object-fit: cover;
 }
 .new {
-    border-radius: 10%;
-    padding: 5px 10px;
-    right: 8%;
-    margin-top: 15px;
-    position: absolute;
-    background-color: #99e2d0;
-    color: #2c9c81;
-    font-size: 1rem;
-    font-weight: bold;
+  border-radius: 10%;
+  padding: 5px 10px;
+  right: 8%;
+  margin-top: 15px;
+  position: absolute;
+  background-color: #99e2d0;
+  color: #2c9c81;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .heart {
-  
-    font-size: 1.6em;
-    transform-origin: bottom;
-    opacity: 1;
-    font-size: 24px;
-    right: 1.5rem;
-    bottom: 1.5rem;
-    cursor: pointer;
-    z-index: 1;
-  position: absolute;
+  font-size: 1.6em;
+  transform-origin: bottom;
+  opacity: 1;
+  font-size: 24px;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+
   font-size: 16px;
   color: black;
-   
 }
 
 /*Footer*/
@@ -234,18 +250,16 @@ main {
   flex-direction: column;
   padding-left: 5%;
   padding-bottom: 30px;
-    padding-top: 20px;
-    line-height: 0.5;
+  padding-top: 20px;
+  line-height: 0.5;
 }
 #white {
-  color: white
+  color: white;
 }
 .bas-de-page {
   display: flex;
   align-items: center;
   color: white;
-  
-
 }
 #proposer {
   margin-left: 5%;
@@ -255,14 +269,12 @@ main {
 }
 /*End footer*/
 
-
-@media all and (min-width: 768px) and (max-width:1240px){
+@media all and (min-width: 768px) and (max-width: 1240px) {
   main {
-    
   }
   #first-section {
     display: block;
-}
+  }
   #second-section {
     display: flex;
     flex-direction: row;
@@ -270,12 +282,12 @@ main {
   #listing {
     display: flex;
   }
- 
+
   .images {
     width: 100%;
   }
 }
-@media all and (min-width:1240px){
+@media all and (min-width: 1240px) {
   .images {
     width: 100%;
   }
@@ -284,3 +296,9 @@ main {
   }
 }
 
+.images-menu {
+  width: 100%;
+  height: 230px;
+  max-width: 100%;
+  object-fit: cover;
+}
