@@ -1,6 +1,8 @@
 /* Feuille de style pour le projet 3 Ohmyfood ! */
 
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 html {
   text-size-adjust: 100%; /* Determine ajustement taille police par rapport à sa taille initiale*/
@@ -15,6 +17,7 @@ html {
 }
 
 h1,
+h2,
 h3 {
   font-family: "Shrikhand", cursive;
 }
@@ -46,8 +49,6 @@ main {
 #first-section {
   width: 100%;
   font-size: 1.2rem;
-  /*font-family: 'Roboto', sans-serif;
-    font-family: 'Shrikhand', cursive;*/
 }
 #city {
   display: flex;
@@ -125,10 +126,10 @@ main {
   margin-bottom: 25px;
   height: 75px;
   width: 100%;
-  border-radius: 24px;
   font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
+  border-radius: 24px;
   box-shadow: 2px 2px 6px #aaa;
   margin-left: 10px;
 }
@@ -228,18 +229,13 @@ main {
   font-weight: bold;
 }
 
-.heart {
-  font-size: 1.6em;
-  transform-origin: bottom;
+.corazon {
   opacity: 1;
-  font-size: 24px;
-  right: 1.5rem;
-  bottom: 1.5rem;
+  font-size: 30px;
   cursor: pointer;
-  z-index: 1;
-
-  font-size: 16px;
   color: black;
+  padding-top: 15px;
+  margin-right: 15px;
 }
 
 /*Footer*/
@@ -269,6 +265,88 @@ main {
 }
 /*End footer*/
 
+/* 1er restaurant La palette du gout*/
+
+.images-menu {
+  width: 100%;
+  height: 230px;
+  max-width: 100%;
+  object-fit: cover;
+}
+.backround-grey {
+  background-color: #fafafa;
+  padding: 0 30px;
+}
+.title-heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*padding: 0 30px;*/
+}
+.border-bottom {
+  border-bottom: 3px solid;
+  width: 10%;
+  border-color: #99e2d0;
+  padding-bottom: 2%;
+  font-weight: 400;
+  font-family: "Roboto-Thin";
+  font-size: 17px;
+  padding: 30px 0 0 0;
+}
+.entree-choice-1 {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 24px;
+  box-shadow: 2px 2px 6px #aaa;
+  width: 23rem;
+  cursor: pointer;
+  padding: 0 10px;
+  margin-top: 25px;
+}
+.different-choice {
+  margin-left: 5px;
+}
+.title-menu {
+  margin-bottom: 0;
+}
+.small-title-menu {
+  margin-top: 0;
+}
+.tarif {
+  margin-left: auto;
+}
+.price {
+  padding-top: 25px;
+}
+.commander {
+  display: flex;
+  width: 60%;
+  max-width: 100%;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 30px;
+  border: #f2f2f2 0.2rem solid;
+  padding: 8px;
+  height: 49px;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #ff79da;
+  margin: auto;
+  margin-top: 50px;
+}
+.footer-menu {
+  display: flex;
+  background: #363636;
+  padding: 5%;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  line-height: 0.5;
+  margin-top: 50px;
+}
+
 @media all and (min-width: 768px) and (max-width: 1240px) {
   main {
   }
@@ -294,11 +372,4 @@ main {
   .backround {
     width: 40%;
   }
-}
-
-.images-menu {
-  width: 100%;
-  height: 230px;
-  max-width: 100%;
-  object-fit: cover;
 }
