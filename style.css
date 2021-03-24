@@ -265,7 +265,7 @@ main {
 }
 /*End footer*/
 
-/* 1er restaurant La palette du gout*/
+/* Menus des quatres restaurants*/
 
 .images-menu {
   width: 100%;
@@ -274,9 +274,13 @@ main {
   object-fit: cover;
 }
 .backround-grey {
-  background-color: #fafafa;
-  padding: 0 30px;
+  background-color:  #f6f6f6;
+  margin-top: -50px;
+  border-radius: 60px 60px 0 0;
+  position: relative;
+  padding: 0 20px;
 }
+
 .title-heart {
   display: flex;
   justify-content: space-between;
@@ -366,10 +370,21 @@ main {
   }
 }
 @media all and (min-width: 1240px) {
+  #third-section {
+    display: flex;
+    flex-wrap: wrap;
+}
   .images {
     width: 100%;
   }
   .backround {
     width: 40%;
   }
+  #restaurant {
+    margin-left: 45%;
+#footer-footer {
+  display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
 }
