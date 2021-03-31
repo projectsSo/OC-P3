@@ -385,25 +385,42 @@ main {
   width: 100%;
   cursor: pointer;
   margin-top: 25px;
+  position: relative;
+  flex-grow: 1;  /*A verifier*/
+  overflow: hidden;  /*a verifier*/   /*Est une propriété raccourcie qui définit comment gérer le dépassement du contenu d'un élément dans son bloc*/ 
+  align-items: center;
+  animation: menu 1000ms 3500ms both;
 }
+
 .different-choice {
   margin-left: 5px;
+  text-overflow: ellipsis;   /*Le texte peut être rogné (clipping), afficher une ellipse ('…', */
+  white-space: nowrap;  /* Façon dont les blancs sont gérés au sein de l'élément.*/
+  overflow: hidden; 
+
+  
+    position: relative;  /*a verifier*/
 }
 .title-menu {
   margin-bottom: 0;
 }
 .small-title-menu {
   margin-top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .tarif {
   margin-left: auto;
 }
 .price {
-  padding-top: 25px;
+  padding-right: 18px;
+  padding-top: 30px;
 }
 .check {
   background-color: #99e2d0;
   color: white;
+  
   font-weight: bold;
   border: none;
   border-radius: 0 20px 20px 0;
@@ -412,28 +429,62 @@ main {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  opacity: 0;
+  opacity: 0;              /*invisible*/
   position: relative;
+  display: flex;
+
+overflow: hidden;  
+  height: 80px;
+  width: 44px;
+  position: absolute;
+  right: -50px;
+  padding-left: 15px;
+  padding-right: 30px;
+
+
+ /* opacity: 0;  *
+    height: 70px;  *
+    width: 44px;
+    line-height: 84px;
+    text-align: center;
+    background-color: #99e2d0; *
+    position: absolute;  
+    border-radius: 0px 12px 12px 0px;
+    */
+
+  }
+  .check:hover {
+    opacity: 1;
+    right: 0px;
+    
+   
+  }
+  .entree-choice-1:hover .check {
+  
+    right: 0px;
+      opacity: 1;
+      transition-duration: 0.1s;
+      transition: right 1s;
+      display: flex;
+      align-items: center;
+      position: relative;
   
 }
-.check:hover {
-  opacity: 1;
+.entree-choice-1:hover .fa-check.fas.logo_check {
+  transform: rotate(360deg);
+  transition: transform 1000ms;
   
   
-}
+  align-items: center;
+  
+      
+} 
+      
 
     
   
-  
-
-.fa-check.fas.logo_check:hover {
-  transform: rotate(-360deg);
-  transition: transform 500ms ease-in-out;
-}
-
-
-.fa-check.fas.logo_check {
-  display: flex;
+  .fa-check.fas.logo_check {
+    display: flex;
   align-items: center;
   background-color: white;
   color: #99e2d0;
@@ -444,11 +495,15 @@ main {
   width: 28px;
   height: 28px;
   border-radius: 28px;
-  
+ 
   cursor: pointer;
-  transform: rotate(0deg);
+  
+  
+  
 }
-
+.fa-check.fas.logo_check:hover {
+transform: rotate(0deg);  /*rotation*/
+}
 
 .footer-menu {
   display: flex;
