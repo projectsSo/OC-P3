@@ -570,7 +570,7 @@ main {
   /*Accueil*/
 
 p:hover {
-  color:#d979ff;
+  color:#dd9df7;
 }
 
   .fas.fa-heart {
@@ -587,7 +587,7 @@ p:hover {
     transform: scaleX(1);
     animation-name: coeur;
     animation: coeur 1000ms;
-    color: #d979ff;
+    color: #dd9df;
   }
 
   @keyframes coeur {
@@ -704,6 +704,8 @@ color: #99E2D0;
     justify-content: space-between;
     
   }
-
+#white:hover {
+  color: #99e2d0;
+}
 
 }
