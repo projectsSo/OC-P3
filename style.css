@@ -499,10 +499,10 @@ main {
   justify-content: center;
   /*position: relative;*/
   left: 0;
- /* width: 22px;
-  height: 22px;*/
-  
-  border-radius: 50%;    /*28px*/
+ width: 22px;
+  height: 22px;
+  object-fit: cover;
+  border-radius: 28px;    
   cursor: pointer;
   overflow: hidden;
 }
