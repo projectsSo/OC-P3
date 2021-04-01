@@ -467,7 +467,7 @@ main {
   overflow: hidden;  /*Le contenu est rogné si besoin pour s'inscrire dans la boîte de remplissage (padding) et aucune barre de défilement n'est affichée*/
   height: 80px;
   
- 
+ width: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
