@@ -462,7 +462,7 @@ main {
   display: inline-flex;
   align-items: center;
   opacity: 0; /*invisible*/
- width: 12%;      /*Permet de ne pas ecraser le cercle en version mobile*/
+ width: 15%;      /*Permet de ne pas ecraser le cercle en version mobile*/
   display: flex;
   overflow: hidden;  /*Le contenu est rogné si besoin pour s'inscrire dans la boîte de remplissage (padding) et aucune barre de défilement n'est affichée*/
   height: 80px;
@@ -487,7 +487,7 @@ main {
 .entree-choice-1:hover .fa-check.fas.logo_check {
   transform: rotate(360deg);
   transition: transform 1000ms;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 .fa-check.fas.logo_check {
