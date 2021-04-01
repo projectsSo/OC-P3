@@ -456,7 +456,7 @@ main {
   font-weight: bold;
   border: none;
   border-radius: 0 20px 20px 0;
-  padding: 0 1.25rem;
+ /* padding: 0 1.25rem;*/
   font-size: 1rem;
   cursor: pointer;
   display: inline-flex;
@@ -464,7 +464,7 @@ main {
   opacity: 0; /*invisible*/
  
   display: flex;
-  overflow: hidden;
+  overflow: hidden;  /*Le contenu est rogné si besoin pour s'inscrire dans la boîte de remplissage (padding) et aucune barre de défilement n'est affichée*/
   height: 80px;
   
  
