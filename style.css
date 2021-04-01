@@ -462,7 +462,8 @@ main {
   display: inline-flex;
   align-items: center;
   opacity: 0; /*invisible*/
- width: 30%;      /*Permet de ne pas ecraser le cercle en version mobile*/
+ /*width: 30%; */     /*Permet de ne pas ecraser le cercle en version mobile*/
+ width: auto;
   display: flex;
   overflow: hidden;  /*Le contenu est rogné si besoin pour s'inscrire dans la boîte de remplissage (padding) et aucune barre de défilement n'est affichée*/
   height: 80px;
