@@ -462,12 +462,12 @@ main {
   display: inline-flex;
   align-items: center;
   opacity: 0; /*invisible*/
-  position: relative;
+ 
   display: flex;
   overflow: hidden;
   height: 80px;
-  position: absolute;
-  right: -50px;
+  
+ 
   padding-left: 15px;
   padding-right: 30px;
 }
