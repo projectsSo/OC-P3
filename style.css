@@ -469,7 +469,7 @@ main {
   
  
   /*padding-left: 15px;*/
-  padding-right: 10px;
+  padding-right: 15px;
 }
 .check:hover {
   opacity: 1;
@@ -499,8 +499,9 @@ main {
   justify-content: center;
   /*position: relative;*/
   left: 0;
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
+  
   border-radius: 28px;
   cursor: pointer;
   overflow: hidden;
