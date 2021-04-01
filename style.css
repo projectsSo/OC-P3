@@ -466,7 +466,6 @@ main {
   display: flex;
   overflow: hidden;
   height: 80px;
-  width: 44px;
   position: absolute;
   right: -50px;
   padding-left: 15px;
