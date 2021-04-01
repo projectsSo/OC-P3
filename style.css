@@ -491,6 +491,7 @@ main {
  /* margin-left: 20px; */
   margin: auto;
   padding: auto;
+  width: auto;
  align-items: center;
 }
 
