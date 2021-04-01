@@ -477,7 +477,7 @@ main {
 }
 .entree-choice-1:hover .check {
   right: 0px;
-  opacity: 1;
+  opacity: 1; /*visible*/
   transition-duration: 0.1s;
   transition: right 1s;
   display: flex;
@@ -503,6 +503,7 @@ main {
   height: 28px;
   border-radius: 28px;
   cursor: pointer;
+  overflow: hidden;
 }
 .fa-check.fas.logo_check:hover {
   transform: rotate(0deg); /*rotation*/
