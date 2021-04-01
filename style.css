@@ -462,7 +462,7 @@ main {
   display: inline-flex;
   align-items: center;
   opacity: 0; /*invisible*/
- width: 25%;
+ width: 20%;
   display: flex;
   overflow: hidden;  /*Le contenu est rogné si besoin pour s'inscrire dans la boîte de remplissage (padding) et aucune barre de défilement n'est affichée*/
   height: 80px;
