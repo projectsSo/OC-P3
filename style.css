@@ -490,6 +490,7 @@ main {
   transition: transform 1000ms;
  /* margin-left: 20px; */
   margin: auto;
+  padding: auto;
  align-items: center;
 }
 
