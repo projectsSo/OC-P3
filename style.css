@@ -487,8 +487,8 @@ main {
 .entree-choice-1:hover .fa-check.fas.logo_check {
   transform: rotate(360deg);
   transition: transform 1000ms;
-  /*margin-left: 30px;*/
-  margin: auto;
+  margin-left: 37px; 
+ 
 }
 
 .fa-check.fas.logo_check {
