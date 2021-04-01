@@ -533,7 +533,9 @@ main {
 @media all and (min-width: 768px) and (max-width: 1240px) {
 
   /*Accueil*/
-  main {
+  main { 
+    
+    
   }
 
   #third-section {
@@ -552,7 +554,7 @@ main {
   }
 
   .images {
-    width: 100%;
+    width: 50%;
   }
 /*Menus*/
 
@@ -566,6 +568,11 @@ main {
 @media all and (min-width: 1240px) {
 
   /*Accueil*/
+
+p:hover {
+  color:#d979ff;
+}
+
   .fas.fa-heart {
     /*full*/
     display: flex;
@@ -601,33 +608,86 @@ main {
     }
   }
 
+#flex {
+display: flex;
+justify-content: space-between;
+}
+  .explorer-commander {
+    width: 40%;
+  }
+  .listing {
+    
+  }
+  .listing:hover .number {
+    background-color:  #99e2d0 ;
+  }
+  .a-deuxieme-section {
+    width: 30rem;
+    transform: scale(1);
+    transition: transform 400ms;
+  }
+.a-deuxieme-section:hover {
+  transform: scale(1.15);
+  color:  #9356dc;
+  background-color: white;
+  box-shadow: 0px 5px 10px 3px rgb(92, 71, 94);
+}
   #third-section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .images {
     width: 100%;
+    height: 150px;
   }
+  .heart {
+    margin-left: 20px;
+  }
+
   .backround {
-    width: 40%;
+    width: 30em;
+  }
+  #fonctionnement {
+   margin-left: 43%;
+   font-weight: bold;
+   font-size: 30px;
   }
   #restaurant {
     margin-left: 45%;
+    font-weight: bold;
+    font-size: 30px;
   }
+
   #footer-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     line-height: 1.5;
   }
+  
+  .fa-utensils:hover,
+  .fa-hands-helping:hover {
+color: #99E2D0;
+  }
 
   /*Menus*/
   .header {
     background-color: #99e2d0;  
   }
+  .header:hover {
+    background-color:  #bcf3e8;
+
+  }
+
+  
   .images-menu {
     height: 430px;
+    width: 230px;
+  }
+  #palette {
+    
   }
   .title-heart {
     display: block;
