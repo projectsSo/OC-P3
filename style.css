@@ -225,9 +225,12 @@ main {
   margin: auto;
   background-color: #f6f6f6;
   padding-bottom: 50px;
+  
 }
 #restaurant {
-  margin-left: 5%;
+  /*margin-left: 5%;*/
+  margin: 0;
+  padding: 20px;
 }
 .backround {
   width: 90%;
@@ -528,35 +531,61 @@ main {
   margin-top: 50px;
 }
 
-/*BREAKPOINTS*/
+/*******************************************BREAKPOINTS************************************************/
 
 @media all and (min-width: 768px) and (max-width: 1240px) {
 
   /*Accueil*/
   main { 
-    
-    
+    width: 100%;
+    margin: 0;
   }
+.header {
+  background-color: #cb61f8;
+}
 
-  #third-section {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  
   #first-section {
     display: block;
   }
   #second-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
-  #listing {
+  .explorer-commander {
+    width: 30em;
+    background: #d99cf1;
+  }
+  .first-ancre {
+    color: black;
+    font-weight: bold;
+    font-weight: 700;
+    font-size: large;
+}
+  .a-deuxieme-section {
+    background-color: #d9f0e9;
+  }
+  #third-section {
     display: flex;
+    flex-wrap: wrap;
   }
+  
+  .listing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 4%;
+    width: 50em;
+}
 
   .images {
-    width: 50%;
+    width: 100%;
   }
-/*Menus*/
+  #color {
+    color: white;
+  }
+/***********Menus***********/
 
  
 }
@@ -568,11 +597,15 @@ main {
 @media all and (min-width: 1240px) {
 
   /*Accueil*/
-
-p:hover {
-  color:#dd9df7;
+p {
+  font-weight: 400;
 }
-
+p:hover {
+  color:#d979ff;
+}
+#reservez {
+  font-weight: 500;
+}
   .fas.fa-heart {
     /*full*/
     display: flex;
@@ -587,7 +620,7 @@ p:hover {
     transform: scaleX(1);
     animation-name: coeur;
     animation: coeur 1000ms;
-    color: #dd9df;
+    color: #d979ff;
   }
 
   @keyframes coeur {
@@ -610,21 +643,35 @@ p:hover {
 
 #flex {
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 }
   .explorer-commander {
     width: 40%;
   }
+  #second-section {
+    margin-bottom: 0; 
+     margin: 0;
+  }
   .listing {
-    
+    margin-top: 0;
+    width: 30em;
   }
   .listing:hover .number {
     background-color:  #99e2d0 ;
   }
+  #deuxieme-section {
+width: 30%;
+margin: 0;
+
+  }
+
   .a-deuxieme-section {
-    width: 30rem;
+    width: 20rem;
     transform: scale(1);
     transition: transform 400ms;
+    margin: 100px;
+    justify-content: space-between;
+    
   }
 .a-deuxieme-section:hover {
   transform: scale(1.15);
@@ -632,12 +679,12 @@ justify-content: space-between;
   background-color: white;
   box-shadow: 0px 5px 10px 3px rgb(92, 71, 94);
 }
-  #third-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+  
 
+
+#flexbox {
+  display: flex;
+}
   .images {
     width: 100%;
     height: 150px;
@@ -648,16 +695,26 @@ justify-content: space-between;
 
   .backround {
     width: 30em;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    margin-top: 5%;
+    
   }
   #fonctionnement {
    margin-left: 43%;
    font-weight: bold;
    font-size: 30px;
+   margin-top: 0;
+   color: #62c3ab;
   }
+  
   #restaurant {
-    margin-left: 45%;
+    margin-top: -5px;
     font-weight: bold;
     font-size: 30px;
+    margin-left: 44%;
+    color: #62c3ab;
   }
 
   #footer-footer {
@@ -666,46 +723,55 @@ justify-content: space-between;
     justify-content: space-between;
     line-height: 1.5;
   }
-  
+  #white:hover {
+    color: #99e2d0;
+  }
   .fa-utensils:hover,
   .fa-hands-helping:hover {
 color: #99E2D0;
   }
 
-  /*Menus*/
+  /***********Menus***********/
   .header {
     background-color: #99e2d0;  
   }
   .header:hover {
     background-color:  #bcf3e8;
-
   }
 
   
   .images-menu {
     height: 430px;
-    width: 230px;
+    width: 100%;
   }
-  #palette {
+  
+  .title-heart {
     
   }
-  .title-heart {
-    display: block;
-  }
+  #direction {
+    display: flex;
+    width: 90%;
+}
   .corazon {
     display: flex;
   }
-  .entree-choice-1 {
-    width: 30rem;
-  }
-  .backround-grey {
+  .entrees,
+  .plats,
+  .desserts {
+    width: 100%;
+    margin: auto;
+    background: #ebebeb;
+    padding-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  .entree-choice-1 {
+    width: 6rem;
+  }
+  .backround-grey {
     
   }
-#white:hover {
-  color: #99e2d0;
-}
+
 
 }
