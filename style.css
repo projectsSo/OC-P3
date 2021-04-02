@@ -384,13 +384,13 @@ main {
   font-size: 30px;
   cursor: pointer;
   position: relative;
-  padding-top: 15px;
+  padding-top: 16px;
   margin-right: 15px;
 }
 .fa-heart.full {
   color: #d979ff;
   position: absolute;
-  top: 17.5px;
+  top: 17px;
   left: 0;
   z-index: 4;
   display: none;
@@ -750,7 +750,9 @@ color: #99E2D0;
   }
   #direction {
     display: flex;
-    width: 90%;
+    width: 100%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
   .corazon {
     display: flex;
@@ -768,10 +770,23 @@ color: #99E2D0;
   }
   .entree-choice-1 {
     width: 6rem;
+    margin: 4%;
+    -webkit-transform: scale(1.25);
+	transform: scale(1.25);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  }
+  .entree-choice-1:hover {
+    -webkit-transform: scale(1);
+	transform: scale(1);
   }
   .backround-grey {
     
   }
-
-
+#proposer {
+  margin-left: 1.5%;
+}
+#devenir {
+  margin-left: 1%;
+}
 }
