@@ -227,7 +227,6 @@ main {
   padding-bottom: 50px;
 }
 #restaurant {
-  /*margin-left: 5%;*/
   margin: 0;
   padding: 20px;
 }
@@ -606,6 +605,8 @@ main {
   #reservez {
     font-weight: 500;
   }
+
+  /*Remplissage progressif coeur*/
   .fas.fa-heart {
     /*full*/
     display: flex;
@@ -642,6 +643,8 @@ main {
       opacity: 0;
     }
   }
+  /*Fin remplissage coeur*/
+  
   #flex {
     display: flex;
     justify-content: space-evenly;
@@ -687,7 +690,6 @@ main {
   .heart {
     margin-left: 20px;
   }
-
   .backround {
     width: 30em;
     margin-left: 20px;
