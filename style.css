@@ -225,7 +225,6 @@ main {
   margin: auto;
   background-color: #f6f6f6;
   padding-bottom: 50px;
-  
 }
 #restaurant {
   /*margin-left: 5%;*/
@@ -333,24 +332,25 @@ main {
 .entrees,
 .plats,
 .desserts {
-  animation: 5s linear forwards slide;
+  opacity: 0;
+  animation: 1s linear forwards slide;
 }
 .entrees {
-  animation-delay: 0.4s;
+  animation-delay: 1s;
 }
 
 .plats {
-  animation-delay: 0.8s;
+  animation-delay: 2s;
 }
 
 .desserts {
-  animation-delay: 1.2s;
+  animation-delay: 3s;
 }
 
 @keyframes slide {
   from {
     opacity: 0;
-    transform: translateY(15px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -459,19 +459,19 @@ main {
   font-weight: bold;
   border: none;
   border-radius: 0 20px 20px 0;
- /* padding: 0 1.25rem;*/
+  /* padding: 0 1.25rem;*/
   font-size: 1rem;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   opacity: 0; /*invisible*/
- /*width: 30%; */     /*Permet de ne pas ecraser le cercle en version mobile*/
- width: auto;
+  /*width: 30%; */ /*Permet de ne pas ecraser le cercle en version mobile*/
+  width: auto;
   display: flex;
-  overflow: hidden;  /*Le contenu est rogné si besoin pour s'inscrire dans la boîte de remplissage (padding) et aucune barre de défilement n'est affichée*/
+  overflow: hidden; /*Le contenu est rogné si besoin pour s'inscrire dans la boîte de remplissage (padding) et aucune barre de défilement n'est affichée*/
   height: 80px;
   position: absolute;
- right: -50px;
+  right: -50px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -491,11 +491,11 @@ main {
 .entree-choice-1:hover .fa-check.fas.logo_check {
   transform: rotate(360deg);
   transition: transform 1000ms;
- /* margin-left: 20px; */
+  /* margin-left: 20px; */
   margin: auto;
   padding: auto;
   /*width: auto;*/
- align-items: center;
+  align-items: center;
 }
 
 .fa-check.fas.logo_check {
@@ -507,11 +507,11 @@ main {
   justify-content: center;
   /*position: relative;*/
   left: 0;
- width: 22px; /*22*/
-  height: 22px;  /*22*/
+  width: 22px; /*22*/
+  height: 22px; /*22*/
   border-radius: 11px; /*28*/
   object-fit: cover;
-     
+
   cursor: pointer;
   overflow: hidden;
 }
@@ -534,17 +534,15 @@ main {
 /*******************************************BREAKPOINTS************************************************/
 
 @media all and (min-width: 768px) and (max-width: 1240px) {
-
   /*Accueil*/
-  main { 
+  main {
     width: 100%;
     margin: 0;
   }
-.header {
-  background-color: #cb61f8;
-}
+  .header {
+    background-color: #cb61f8;
+  }
 
-  
   #first-section {
     display: block;
   }
@@ -561,7 +559,7 @@ main {
     font-weight: bold;
     font-weight: 700;
     font-size: large;
-}
+  }
   .a-deuxieme-section {
     background-color: #d9f0e9;
   }
@@ -569,7 +567,7 @@ main {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .listing {
     display: flex;
     flex-direction: column;
@@ -577,35 +575,37 @@ main {
     max-width: 100%;
     margin-top: 4%;
     width: 50em;
-}
+  }
 
   .images {
     width: 100%;
   }
+  #colori {
+    color: white;
+  }
   #color {
     color: white;
   }
-/***********Menus***********/
-
- 
+  /***********Menus***********/
+  #proposer {
+    margin-left: 1.5%;
+  }
+  #devenir {
+    margin-left: 1%;
+  }
 }
-
-
-
-
 
 @media all and (min-width: 1240px) {
-
   /*Accueil*/
-p {
-  font-weight: 400;
-}
-p:hover {
-  color:#d979ff;
-}
-#reservez {
-  font-weight: 500;
-}
+  p {
+    font-weight: 400;
+  }
+  p:hover {
+    color: #d979ff;
+  }
+  #reservez {
+    font-weight: 500;
+  }
   .fas.fa-heart {
     /*full*/
     display: flex;
@@ -613,78 +613,73 @@ p:hover {
     align-items: center;
     opacity: 0;
   }
-
-  .fas.fa-heart:hover {
+  .heart:hover .far.fa-heart {
+    /*empty*/
+    animation-name: coeurFar;
+    animation: coeurFar 3000ms;
+  }
+  .heart:hover .fas.fa-heart:hover {
     /*full*/
-    opacity: 1;
-    transform: scaleX(1);
     animation-name: coeur;
-    animation: coeur 1000ms;
+    animation: coeur 3000ms;
     color: #d979ff;
   }
 
   @keyframes coeur {
     0% {
-      transform: scaleX(0);
+      opacity: 0;
     }
-    17% {
-      transform: scaleX(0.18);
-    }
-    24% {
-      transform: scaleX(0.4);
-    }
-    46% {
-      transform: scaleX(0.81);
-    }
+
     100% {
-      transform: scaleX(1);
+      opacity: 1;
     }
   }
-
-#flex {
-display: flex;
-justify-content: space-evenly;
-}
+  @keyframes coeurFar {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  #flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
   .explorer-commander {
     width: 40%;
   }
   #second-section {
-    margin-bottom: 0; 
-     margin: 0;
+    margin-bottom: 0;
+    margin: 0;
   }
   .listing {
     margin-top: 0;
-    width: 30em;
+    width: 300px;
   }
   .listing:hover .number {
-    background-color:  #99e2d0 ;
+    background-color: #99e2d0;
   }
   #deuxieme-section {
-width: 30%;
-margin: 0;
-
+    width: 30%;
+    margin: 0;
   }
 
   .a-deuxieme-section {
-    width: 20rem;
     transform: scale(1);
     transition: transform 400ms;
-    margin: 100px;
-    justify-content: space-between;
-    
   }
-.a-deuxieme-section:hover {
-  transform: scale(1.15);
-  color:  #9356dc;
-  background-color: white;
-  box-shadow: 0px 5px 10px 3px rgb(92, 71, 94);
-}
-  
 
+  .a-deuxieme-section:hover {
+    transform: scale(1.15);
+    color: #9356dc;
+    background-color: white;
+    box-shadow: 0px 5px 10px 3px rgb(92, 71, 94);
+  }
 
-#flexbox {
-  display: flex;
-}
+  #flexbox {
+    display: flex;
+  }
   .images {
     width: 100%;
     height: 150px;
@@ -699,16 +694,15 @@ margin: 0;
     margin-right: 20px;
     width: 100%;
     margin-top: 5%;
-    
   }
   #fonctionnement {
-   margin-left: 43%;
-   font-weight: bold;
-   font-size: 30px;
-   margin-top: 0;
-   color: #62c3ab;
+    margin-left: 43%;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 0;
+    color: #62c3ab;
   }
-  
+
   #restaurant {
     margin-top: -5px;
     font-weight: bold;
@@ -728,32 +722,26 @@ margin: 0;
   }
   .fa-utensils:hover,
   .fa-hands-helping:hover {
-color: #99E2D0;
+    color: #99e2d0;
   }
 
   /***********Menus***********/
   .header {
-    background-color: #99e2d0;  
+    background-color: #99e2d0;
   }
   .header:hover {
-    background-color:  #bcf3e8;
+    background-color: #bcf3e8;
   }
-
-  
   .images-menu {
     height: 430px;
     width: 100%;
-  }
-  
-  .title-heart {
-    
   }
   #direction {
     display: flex;
     width: 100%;
     margin-left: 4%;
     margin-right: 4%;
-}
+  }
   .corazon {
     display: flex;
   }
@@ -772,21 +760,12 @@ color: #99E2D0;
     width: 6rem;
     margin: 4%;
     -webkit-transform: scale(1.25);
-	transform: scale(1.25);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    transform: scale(1.25);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
   .entree-choice-1:hover {
     -webkit-transform: scale(1);
-	transform: scale(1);
+    transform: scale(1);
   }
-  .backround-grey {
-    
-  }
-#proposer {
-  margin-left: 1.5%;
-}
-#devenir {
-  margin-left: 1%;
-}
 }
