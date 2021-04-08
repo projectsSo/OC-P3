@@ -387,8 +387,11 @@ main {
 }
 /*difference heart accueil*/
 #padding-margin {
-  padding-top: 1px;
+  padding-top: 1rem;
   margin-right: 15px;
+}
+#empty {
+margin-top: 1rem;
 }
 .border-bottom {
   border-bottom: 3px solid;
