@@ -383,11 +383,11 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*padding: 0 30px;*/
 }
+
 /*difference heart accueil*/
-#padding-margin {
-  padding-top: 0.5rem;
+#padding-margin {     /*full*/
+  padding-top: 0.3rem;
   margin-right: 15px;
 }
 #empty {
