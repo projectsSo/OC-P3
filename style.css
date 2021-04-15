@@ -48,7 +48,7 @@ html {
 }
 #chargement {
   color: whitesmoke;
-  text-transform: uppercase; /*Transforme minuscule en ajuscule*/
+  text-transform: uppercase; /*Transforme minuscule en majuscule*/
   font-size: xx-large;
   font-weight: 900;
 }
@@ -60,9 +60,10 @@ html {
 
 @keyframes hidewrapper {
   to {
-    visibility: hidden;
-  }
+    visibility: hidden;    /*La boîte est invisible mais continue d'avoir un impact sur la disposition*/
 }
+}
+
 a,
 p,
 h2,
@@ -575,6 +576,8 @@ margin-top: 0.5rem;
   }
 }
 
+/**************************** @media 1240px *************************/
+
 @media all and (min-width: 1240px) {
   /*Accueil*/
   p {
@@ -616,7 +619,7 @@ margin-top: 0.5rem;
       opacity: 1;
     }
   }
-  @keyframes coeurFar {
+  @keyframes coeurFar {     /*empty*/
     0% {
       opacity: 1;
     }
@@ -740,13 +743,10 @@ margin-top: 0.5rem;
   .entree-choice-1 {
     width: 6rem;
     margin: 4%;
-    -webkit-transform: scale(1.25);
     transform: scale(1.25);
-    -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
   .entree-choice-1:hover {
-    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
