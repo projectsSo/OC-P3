@@ -610,7 +610,7 @@ margin-top: 0.5rem;
     color: #d979ff;
   }
 
-  @keyframes coeur {
+  @keyframes coeur {   /*full*/
     0% {
       opacity: 0;
     }
