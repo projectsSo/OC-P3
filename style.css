@@ -258,9 +258,8 @@ main {
   cursor: pointer;
 }
 /*full*/
-.fas.fa-heart {
+.fas.fa-heart {     /*Icones*/
   /*full*/
-  color: #d979ff;
   position: absolute;
   top: 3px;
   left: 0;
@@ -271,6 +270,8 @@ main {
   /*empty*/
   position: relative;
 }
+/*Fin heart*/
+
 .title {
   margin-bottom: 0;
   font-weight: bold;
@@ -336,7 +337,7 @@ main {
   animation: 1s linear forwards slide;
 }
 .entrees {
-  animation-delay: 1s;
+  animation-delay: 1s;  /*delai d'attente avant de demarrer une animation*/
 }
 
 .plats {
@@ -350,7 +351,7 @@ main {
 @keyframes slide {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(30px);      /*permet de deplacer un element verticalement*/
   }
   to {
     opacity: 1;
@@ -443,6 +444,7 @@ margin-top: 0.5rem;
 .price {
   padding-right: 18px;
   padding-top: 30px;
+  transition: ease-out 1s;
 }
 
 /*coche coulissante de droite à gauche*/
@@ -451,14 +453,15 @@ margin-top: 0.5rem;
   color: white;
   font-weight: bold;
   border: none;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 12px 12px 0;
   /* padding: 0 1.25rem;*/
   font-size: 1rem;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   opacity: 0; /*invisible*/
-  width: auto;  /*Permet de ne pas ecraser le cercle en version mobile*/
+  /*width: auto;  /*Permet de ne pas ecraser le cercle en version mobile*/
+  width: 44px;
   display: flex;
   overflow: hidden; /*Le contenu est rogné si besoin pour s'inscrire dans la boîte de remplissage (padding) et aucune barre de défilement n'est affichée*/
   height: 80px;
@@ -466,23 +469,31 @@ margin-top: 0.5rem;
   right: -50px;
   padding-left: 15px;
   padding-right: 15px;
+  transition: ease-out 1s;
 }
 .check:hover {
   opacity: 1;
   right: 0px;
+  transition: right 1s;
 }
+.entree-choice-1:hover .price {
+  margin-right: 60px;
+  transition: margin-right 2s;
+  
+}
+
 .entree-choice-1:hover .check {
   right: 0px;
   opacity: 1; /*visible*/
-  transition-duration: 0.1s;
-  transition: right 1s;
+  transition-duration: 2s;
+  transition: right 2s;
   display: flex;
   align-items: center;
   position: relative;
 }
 .entree-choice-1:hover .fa-check.fas.logo_check {
-  transform: rotate(360deg);
-  transition: transform 1000ms;
+  transform: rotate(360deg);  /*tour sur soi-méme*/
+  transition: transform 2s;
   margin: auto;
   align-items: center;
 }
@@ -503,7 +514,9 @@ margin-top: 0.5rem;
   overflow: hidden;
 }
 .fa-check.fas.logo_check:hover {
-  transform: rotate(0deg); /*rotation*/
+  /*transform: rotate(0deg); /*rotation*/
+  transform: rotate(360deg);
+    transition: transform 1s;
 }
 
 #bottom {
@@ -597,26 +610,30 @@ margin-top: 0.5rem;
     justify-content: center;
     align-items: center;
     opacity: 0;
+    color:  #ff79da;
   }
   .heart:hover .far.fa-heart {
     /*empty*/
     animation-name: coeurFar;
     animation: coeurFar 3000ms;
+    
+    
   }
   .heart:hover .fas.fa-heart:hover {
     /*full*/
     animation-name: coeur;
     animation: coeur 3000ms;
-    color: #d979ff;
   }
 
-  @keyframes coeur {   /*full*/
+
+  
+ @keyframes coeur {   /*full*/
     0% {
-      opacity: 0;
+      opacity: 0;  /*transparent*/
     }
 
     100% {
-      opacity: 1;
+      opacity: 1;   /*opaque*/
     }
   }
   @keyframes coeurFar {     /*empty*/
@@ -748,7 +765,7 @@ margin-top: 0.5rem;
   }
   .entree-choice-1:hover {
     transform: scale(1);
-  }
+  
 }
 
 /*************Fin feuille de style***************/
