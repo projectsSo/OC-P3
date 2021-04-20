@@ -619,8 +619,6 @@ margin-top: 0.5rem;
     /*empty*/
     animation-name: coeurFar;
     animation: coeurFar 3000ms;
-    
-    
   }
   .heart:hover .fas.fa-heart:hover {
     /*full*/
@@ -680,7 +678,6 @@ margin-top: 0.5rem;
     transform: scale(1);
     transition: transform 400ms;
   }
-
   .a-deuxieme-section:hover {
     transform: scale(1.15);
     color: #9356dc;
