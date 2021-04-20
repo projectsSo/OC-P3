@@ -257,6 +257,7 @@ main {
   position: relative;
   cursor: pointer;
 }
+
 /*full*/
 .fas.fa-heart {     /*Icones*/
   /*full*/
@@ -603,14 +604,16 @@ margin-top: 0.5rem;
     font-weight: 500;
   }
 
-  /*Remplissage progressif coeur*/
+  
+/*Remplissage progressif coeur*/
   .fas.fa-heart {
     /*full*/
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    color:  #ff79da;
+    z-index: 1;
+  
   }
   .heart:hover .far.fa-heart {
     /*empty*/
@@ -623,11 +626,15 @@ margin-top: 0.5rem;
     /*full*/
     animation-name: coeur;
     animation: coeur 3000ms;
-  }
+    opacity: 1;
+    background: -webkit-linear-gradient(45deg, #FF79DA, #9356DC);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+}
 
-
-  
- @keyframes coeur {   /*full*/
+  @keyframes coeur {   /*full*/
     0% {
       opacity: 0;  /*transparent*/
     }
@@ -767,5 +774,5 @@ margin-top: 0.5rem;
     transform: scale(1);
   
 }
-
+}
 /*************Fin feuille de style***************/
